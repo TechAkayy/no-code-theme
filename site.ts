@@ -24,14 +24,8 @@ export default {
       icon: 'i-mdi-home',
     },
     {
-      text: 'Quick Start',
-      link: '/quick-start',
-      type: 'primary',
-      icon: 'i-mdi-home',
-    },
-    {
-      text: 'Subscribe',
-      link: '/subscribe',
+      text: 'About Us',
+      link: '/about-us',
       type: 'primary',
       icon: 'i-mdi-home',
     },

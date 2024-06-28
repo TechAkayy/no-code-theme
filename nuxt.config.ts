@@ -18,7 +18,7 @@ export default defineNuxtConfig({
     './app-nuxt-tailwindcss-layer', // NavBar and Footer components
   ],
   // ssr: false,
-  devtools: { enabled: false }, // Disable when using Vue devtools
+  // devtools: { enabled: false }, // Disable when using Vue devtools
 
   // Preparation for Nuxt 4 migration
   srcDir: 'app',
@@ -54,7 +54,21 @@ export default defineNuxtConfig({
     '@nuxtjs/fontaine',
     '@nuxtjs/critters',
     'nuxt-icon',
+    'nuxt-graphql-middleware',
   ],
+
+  // WP URL
+  runtimeConfig: {
+    public: {
+      // Can access this as `config.public.wordpressUrl` in the Nuxt app
+      wordpressUrl: 'http://nocodetheme.local/graphql',
+    },
+  },
+
+  graphqlMiddleware: {
+    graphqlEndpoint: 'http://nocodetheme.local/graphql',
+  },
+
   // https://dev.to/jacobandrewsky/improving-performance-of-nuxt-with-fontaine-5dim
   fontMetrics: {
     fonts: ['Inter', 'Kalam'],
