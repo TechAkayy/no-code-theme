@@ -7,7 +7,7 @@ export default {
   description: 'Vue Designer Nuxt Tailwind CSS - Quick start template',
   logo: 'i-vscode-icons:file-type-coffeelint',
   author: 'Pinegrow',
-  url: 'https://pg-nuxt-tailwindcss.netlify.app',
+  url: 'https://pg-nuxt-headless-wordpress.netlify.app/',
   github: 'https://github.com/pinegrow/pg-nuxt-tailwindcss',
   defaultLocale: 'en', // default
   identity: {
